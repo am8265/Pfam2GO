@@ -79,6 +79,8 @@ for ids in sorted(gid_go.keys()):
                     cat_go_def+=go+' ['+go_def+'];'
             else:
                 pass
+        cat_go=cat_go.rstrip(',')
+        cat_go_def=cat_go_def.rstrip(';')
         fh.write(ids+'\t'+cat_go+'\t'+cat_go_def+'\n')
 fh.close()    
 
