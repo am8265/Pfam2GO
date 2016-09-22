@@ -1,0 +1,5 @@
+Run the script as this:
+./dom_parse_v2.py <input_file> 
+eg.
+./dom_parse_v2.py <output1a.txt>
+Result
