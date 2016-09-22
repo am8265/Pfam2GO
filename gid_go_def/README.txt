@@ -8,4 +8,6 @@ eg. :
 
 Result:
 
-gid_go.txt file would be generated mapping peptide_ids to GO terms and GO id information
+gid_go.txt file would be generated mapping peptide_ids to GO terms and GO id information and GO_id,Evalue information
+
+Please Note the dependencies: 1)dom_parse.py script 
