@@ -49,7 +49,8 @@ for ids in id_pfam.keys():
     for p_ids in id_pfam[ids]:
         for defi in pfam_def[p_ids]:
             pf_def+=str(p_ids)+str([defi])+'; '
-    pf_def=pf_def.rstrip(';')
+    pf_def=pf_def.strip().rstrip(';')
+    pfm_id=pfm_id.strip(',')
     out_fh.write(str(ids)+'\t'+pfm_id+'\t'+pf_def+'\n')
 #for ids in gid_pfam.keys():
 #    print(ids)
