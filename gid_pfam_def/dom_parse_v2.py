@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import re
 import sys
-def gid_pfam(fh_1):
+import math
+def gid_pfam(fh_1,eval=math.exp(-10)):
     
     fh=open(fh_1)
     gid_pfam=dict()
@@ -9,23 +10,23 @@ def gid_pfam(fh_1):
     for line in fh:
         line=line.rstrip('\n').strip()
         if re.search('(PF\d+)\.\d+',line)!=None:
-            pfam_gid=re.search('(PF\d+)\.\d+\s+(\d+)\s*(\S+).+\d{0,1}\.\d{0,3}\S(.+)',line).groups()#This is where we pick up 
+            pfam_gid=re.search('(PF\d+)\.\d+\s+(\d+)\s*(\S+)\s+\S+\s+\S+\s+(\S+).+\d{0,1}\.\d{0,3}\S(.+)',line).groups()#This is where we pick up 
             pfam_id=pfam_gid[0]
         #print(pfam_id)
             gid=pfam_gid[2]
         #print(gid)
-            def_pfam=pfam_gid[3]#pfam_definition
+            def_pfam=pfam_gid[4]#pfam_definition
+            evalue=float(pfam_gid[3])
+            if evalue<=eval:#if there is a cutoff match....
+                if pfam_def.get(pfam_id,'0')=='0':
+                    pfam_def[pfam_id]=[def_pfam]#every unique pfam_id shoudl have a unique definition
+                else:
+                    pfam_def[pfam_id].append(def_pfam)
             
-            print(def_pfam)
-            if pfam_def.get(pfam_id,'0')=='0':
-                pfam_def[pfam_id]=[def_pfam]#every unique pfam_id shoudl have a unique definition
-            else:
-                pfam_def[pfam_id].append(def_pfam)
-            
-            if gid_pfam.get(gid,'0')=='0':
-                gid_pfam[gid]=[pfam_id]
-            else:
-                gid_pfam[gid].append(pfam_id)
+                if gid_pfam.get(gid,'0')=='0':
+                    gid_pfam[gid]=[pfam_id]
+                else:
+                    gid_pfam[gid].append(pfam_id)
     
 #print(gid_pfam)
     for ids in sorted(gid_pfam.keys()):
