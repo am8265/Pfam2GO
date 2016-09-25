@@ -10,9 +10,6 @@ def gid_pfam(fh_1,eval=math.exp(-10)):
     for line in fh:
         line=line.rstrip('\n').strip()
         if re.search('(PF\d+)\.\d+',line)!=None:
-
-######## Rewrite the parser script##################
-########Become knowledgable in github############
             pfam_gid=re.search('(PF\d+)\.\d+\s+(\d+)\s*(\S+)\s+\S+\s+\S+\s+(\S+).+\d{0,1}\.\d{0,3}\S(.+)',line).groups()#This is where we pick up 
 
 
