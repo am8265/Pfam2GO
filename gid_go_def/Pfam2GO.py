@@ -15,8 +15,8 @@ def run_pfam (pfam_dir, protein_fasta_file):
     pfam_dir(pfam_dir = /<path_to>/Pfam-A.hmm) and returns a file name hmmscan_file in the working directory
     """
     #define path to hmmscan binaries
-    hmmscan_path = ''
-    completed = subprocess.run([hmmscan_path,'--domtblout','hmmscan_file',pfam_dir,protein_fasta_file], check=TRUE, stdout=subprocess.PIPE)
+    hmmscan_path = 'HMMER/hmmer-3.1b2-linux-intel-x86_64/binaries/hmmscan'
+    completed = subprocess.run([hmmscan_path,'--domtblout','hmmscan_file',pfam_dir,protein_fasta_file], check="TRUE", stdout=subprocess.PIPE)
 
     return './hmmscan_file'
 
