@@ -1,0 +1,8 @@
+feature_ID	PFAM_ID	PFAM_Def
+Eucgr.A00004.1.p	PF02984	 Cyclin, C-terminal domain
+Eucgr.A00004.1.p	PF00134	 Cyclin, N-terminal domain
+Eucgr.A00006.1.p	PF02739	 5'-3' exonuclease, N-terminal resolvase-like domain
+Eucgr.A00006.1.p	PF01367	 5'-3' exonuclease, C-terminal SAM fold
+Eucgr.A00001.1.p	PF00226	 DnaJ domain
+Eucgr.A00001.1.p	PF02889	 Sec63 Brl domain
+Eucgr.A00003.1.p	PF10184	 Uncharacterized conserved protein (DUF2358)
