@@ -1,0 +1,29 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Sec63                PF02889.14   257 Eucgr.A00001.1.p     -            670     1e-26   93.5   0.0   1   2       1.8   5.9e+03   -4.0   0.0   232   247   133   148   123   151 0.84 Sec63 Brl domain
+Sec63                PF02889.14   257 Eucgr.A00001.1.p     -            670     1e-26   93.5   0.0   2   2   6.9e-30   2.2e-26   92.4   0.0    11   255   222   588   216   590 0.86 Sec63 Brl domain
+DnaJ                 PF00226.29    63 Eucgr.A00001.1.p     -            670   8.9e-19   67.2   0.2   1   1   8.1e-22   2.6e-18   65.7   0.2     2    62   100   160    99   161 0.94 DnaJ domain
+ECF_trnsprt          PF12822.5    173 Eucgr.A00001.1.p     -            670     0.047   13.6   0.9   1   2   1.7e-05     0.054   13.4   0.1    72   138    11    93     3   153 0.88 ECF transporter, substrate-specific component
+ECF_trnsprt          PF12822.5    173 Eucgr.A00001.1.p     -            670     0.047   13.6   0.9   2   2       2.9   9.3e+03   -3.6   0.1    83    83   203   203   175   223 0.57 ECF transporter, substrate-specific component
+PBP1_TM              PF14812.4     85 Eucgr.A00001.1.p     -            670       1.1    9.6   3.4   1   1    0.0011       3.6    8.0   3.4    32    63   619   651   597   660 0.72 Transmembrane domain of transglycosylase PBP1 at N-terminal
+Astro_capsid_p       PF12226.6    363 Eucgr.A00001.1.p     -            670       2.9    6.8   6.4   1   1    0.0016       5.1    6.0   6.4   230   266   607   643   586   649 0.83 Turkey astrovirus capsid protein
+DUF2358              PF10184.7    113 Eucgr.A00003.1.p     -            276   2.3e-39  134.0   0.1   1   1   5.5e-43     3e-39  133.6   0.1     3   113    92   202    90   202 0.99 Uncharacterized conserved protein (DUF2358)
+SnoaL_2              PF12680.5    102 Eucgr.A00003.1.p     -            276   0.00052   20.5   0.0   1   1   1.6e-07   0.00087   19.8   0.0    18   102   111   202   106   202 0.88 SnoaL-like domain
+MMU163               PF17119.3    249 Eucgr.A00003.1.p     -            276    0.0007   18.7   0.0   1   2   1.3e-05     0.069   12.2   0.0     7    51    74   118    68   123 0.88 Mitochondrial protein up-regulated during meiosis
+MMU163               PF17119.3    249 Eucgr.A00003.1.p     -            276    0.0007   18.7   0.0   2   2    0.0031        17    4.3   0.0   193   220   178   205   167   209 0.87 Mitochondrial protein up-regulated during meiosis
+Cyclin_N             PF00134.21   127 Eucgr.A00004.1.p     -            288   5.9e-38  129.4   0.9   1   2   7.2e-42   5.9e-38  129.4   0.9     1   127    37   163    37   163 0.98 Cyclin, N-terminal domain
+Cyclin_N             PF00134.21   127 Eucgr.A00004.1.p     -            288   5.9e-38  129.4   0.9   2   2     0.027   2.2e+02    1.5   0.4    44    85   177   218   168   254 0.70 Cyclin, N-terminal domain
+Cyclin_C             PF02984.17   119 Eucgr.A00004.1.p     -            288   3.5e-31  107.6   0.8   1   1   8.2e-35   6.7e-31  106.7   0.8     1   118   165   281   165   282 0.96 Cyclin, C-terminal domain
+5_3_exonuc_N         PF02739.14   159 Eucgr.A00006.1.p     -            434   5.3e-41  140.0   0.0   1   1   1.3e-44   1.1e-40  139.0   0.0     1   159   104   295   104   295 0.89 5'-3' exonuclease, N-terminal resolvase-like domain
+5_3_exonuc           PF01367.18    97 Eucgr.A00006.1.p     -            434   2.2e-26   92.1   0.0   1   1   4.3e-30   3.5e-26   91.5   0.0     2    95   298   394   297   396 0.96 5'-3' exonuclease, C-terminal SAM fold
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      /Users/ayanmalakar/BioinformaticsCookBook/first5seq.fa
+# Target file:     /Users/ayanmalakar/BioinformaticsCookBook/Pfam_GO/gid_go_def/Pfam/Pfam-A.hmm
+# Option settings: /Users/ayanmalakar/BioinformaticsCookBook/Pfam_GO/gid_go_def/hmmer-3.1b2-macosx-intel/binaries/hmmscan --domtblout hmmscan_file /Users/ayanmalakar/BioinformaticsCookBook/Pfam_GO/gid_go_def/Pfam/Pfam-A.hmm /Users/ayanmalakar/BioinformaticsCookBook/first5seq.fa 
+# Current dir:     /Users/ayanmalakar/BioinformaticsCookBook/Pfam_GO/gid_go_def
+# Date:            Mon Aug 28 17:59:15 2017
+# [ok]

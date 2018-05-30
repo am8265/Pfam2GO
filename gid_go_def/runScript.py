@@ -9,5 +9,5 @@ pfamtoGO_mapping_file = "/Users/ayanmalakar/BioinformaticsCookBook/Pfam_GO/gid_g
 go_runner = Pfam2GO(config)
 output = go_runner.run_pfam_2_go(pfam_dir, protein_fasta_file, pfamtoGO_mapping_file)
 
-#Testing..
+# Testing..
 print(output)
